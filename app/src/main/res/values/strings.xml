@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Склад</string>
+    <string name="hint_login">Login</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Вход</string>
+    <string name="enter_your_login">Введите ваш логин</string>
+    <string name="enter_your_password">Введите ваш пароль</string>
+    <string name="products">Товары</string>
+</resources>

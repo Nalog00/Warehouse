@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivProduct"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvProductName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        app:layout_constraintBottom_toTopOf="@id/ivBarCodeFlat"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginTop="@dimen/margin_small"
+        android:textColor="#000000"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivProduct"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivBarCodeFlat"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_barcodeflat"
+        app:layout_constraintBottom_toTopOf="@id/tvTextPrice"
+        app:layout_constraintStart_toStartOf="@id/tvProductName"
+        app:layout_constraintTop_toBottomOf="@id/tvProductName"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/tvBarCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:textColor="#DE000000"
+        android:textSize="13dp"
+        app:layout_constraintStart_toEndOf="@id/ivBarCodeFlat"
+        app:layout_constraintTop_toTopOf="@id/ivBarCodeFlat" />
+
+    <TextView
+        android:id="@+id/tvTextQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:text="Кол-во:"
+        android:textColor="#DE000000"
+        android:textSize="13dp"
+        app:layout_constraintStart_toEndOf="@id/tvBarCode"
+        app:layout_constraintTop_toTopOf="@id/tvBarCode" />
+
+    <TextView
+        android:id="@+id/tvQuantityProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:textColor="#DE000000"
+        android:textSize="13dp"
+        app:layout_constraintStart_toEndOf="@id/tvTextQuantity"
+        app:layout_constraintTop_toTopOf="@id/tvTextQuantity" />
+
+    <TextView
+        android:id="@+id/tvTextPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Цена Прод:"
+        android:textColor="#DE000000"
+        android:textSize="13dp"
+        app:layout_constraintStart_toStartOf="@id/ivBarCodeFlat"
+        app:layout_constraintTop_toBottomOf="@id/ivBarCodeFlat"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/tvPriceProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:textColor="#DE000000"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="@id/tvTextPrice"
+        app:layout_constraintStart_toEndOf="@id/tvTextPrice"
+        app:layout_constraintTop_toTopOf="@id/tvTextPrice" />
+
+    <TextView
+        android:id="@+id/tvTextCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ст-ть товара:"
+        android:textColor="#DE000000"
+        android:textSize="13dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tvTextPrice"
+        app:layout_constraintTop_toBottomOf="@id/tvTextPrice" />
+
+    <TextView
+        android:id="@+id/tvCostProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="136000сум"
+        android:layout_marginStart="2dp"
+        android:textColor="#DE000000"
+        android:textSize="13dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/tvTextCost"
+        app:layout_constraintStart_toEndOf="@id/tvTextCost"
+        app:layout_constraintTop_toTopOf="@id/tvTextCost" />
+
+
+    <EditText
+        android:id="@+id/etEnterQuantityProduct"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:inputType="number"
+        android:background="@drawable/shape_box_for_enter_quantity"
+        app:layout_constraintTop_toBottomOf="@id/tvProductName"
+        android:gravity="center"
+        android:hint="(шт)"
+        android:textSize="14dp"
+        android:padding="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

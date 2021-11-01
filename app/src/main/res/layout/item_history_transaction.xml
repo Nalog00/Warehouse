@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin_small"
+    android:layout_marginEnd="@dimen/margin_small"
+    android:layout_marginTop="@dimen/margin_small"
+    android:padding="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/shape_square"
+    android:elevation="20dp">
+    <TextView
+        android:id="@+id/tvProductName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/margin_standard"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvProductQuantity"
+        android:layout_marginTop="@dimen/margin_standard"
+        android:textColor="#DE000000"
+        app:layout_constraintBottom_toTopOf="@id/titleFrom"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:textSize="14dp"
+        tools:ignore="SpUsage" />
+    <TextView
+        android:id="@+id/tvProductQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:textColor="#DE000000"
+        android:layout_marginEnd="@dimen/margin_standard"
+        app:layout_constraintBottom_toBottomOf="@id/tvProductName"
+        app:layout_constraintTop_toTopOf="@id/tvProductName"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpUsage"/>
+
+    <TextView
+        android:id="@+id/titleFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/tvProductName"
+        app:layout_constraintTop_toBottomOf="@id/tvProductName"
+        android:textSize="14dp"
+        android:text="От кого:"
+        android:textColor="#DE000000"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:ignore="SpUsage" />
+    <TextView
+        android:id="@+id/tvFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/titleFrom"
+        app:layout_constraintTop_toTopOf="@id/titleFrom"
+        android:layout_marginStart="@dimen/margin_small"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="@id/titleFrom"
+        android:textColor="#DE000000"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:ignore="SpUsage" />
+
+    <TextView
+        android:id="@+id/titleTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@id/tvTo"
+        app:layout_constraintTop_toBottomOf="@id/tvProductName"
+        android:textSize="14dp"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:text="Кому:"
+        android:textColor="#DE000000"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:ignore="SpUsage" />
+    <TextView
+        android:id="@+id/tvTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/titleTo"
+        android:textSize="14dp"
+        android:layout_marginEnd="@dimen/margin_standard"
+        app:layout_constraintBottom_toBottomOf="@id/titleTo"
+        android:textColor="#DE000000"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:ignore="SpUsage" />
+
+    <TextView
+        android:id="@+id/tvTextCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/titleFrom"
+        app:layout_constraintTop_toBottomOf="@id/titleFrom"
+        android:textSize="13dp"
+        android:text="Стоимость товара:"
+        android:textColor="#DE000000"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/margin_small"
+        app:layout_constraintVertical_chainStyle="packed"/>
+    <TextView
+        android:id="@+id/tvCostProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tvTextCost"
+        app:layout_constraintTop_toTopOf="@id/tvTextCost"
+        app:layout_constraintBottom_toBottomOf="@id/tvTextCost"
+        android:layout_marginStart="4dp"
+        android:textSize="13dp"
+        android:visibility="gone"
+        android:textColor="#DE000000"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
