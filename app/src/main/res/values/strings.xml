@@ -6,4 +6,11 @@
     <string name="enter_your_login">Введите ваш логин</string>
     <string name="enter_your_password">Введите ваш пароль</string>
     <string name="products">Товары</string>
+
+    //Alisher
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Қарақалпақ жазыушылары</string>
+    <string name="nav_header_subtitle">Библиографиялық  мағлыўмат</string>
+    <string name="nav_header_desc">Navigation header</string>
 </resources>

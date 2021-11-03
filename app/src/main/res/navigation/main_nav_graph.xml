@@ -10,4 +10,9 @@
         android:name="com.example.warehouset.main.home.HomeFragment"
         android:label="HomeFragment"
         tools:layout="@layout/fragment_home"/>
+    <fragment
+        android:id="@+id/historyTransaction"
+        android:name="com.example.warehouset.main.transaction.HistoryTransaction"
+        android:label="HistoryTransaction"
+        tools:layout="@layout/fragment_history_transaction"/>
 </navigation>
