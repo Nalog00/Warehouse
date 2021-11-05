@@ -4,7 +4,7 @@
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/main_color</item>
         <item name="colorPrimaryDark">@color/main_color</item>
-        <item name="colorAccent">@color/main_color</item>
+        <item name="colorAccent">@color/teal_200</item>
         <item name="android:splitMotionEvents">false</item>
         <item name="android:windowEnableSplitTouch">false</item>
         <!-- Customize your theme here. -->

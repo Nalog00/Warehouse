@@ -49,7 +49,6 @@ class HistoryTransaction: Fragment(R.layout.fragment_history_transaction) {
                 Settings.HEADERXRW,
                 Settings.HEADERACCEPT, "Bearer ${settings.token}",startDate)
             rvHistory.adapter = adapter
-
             tilTime.onClick {
                 val calendar = Calendar.getInstance()
                 val year = calendar.get((Calendar.YEAR))

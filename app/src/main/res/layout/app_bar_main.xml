@@ -17,7 +17,19 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             app:navigationIcon="@drawable/ic_baseline_menu_24"
-            app:popupTheme="@style/ThemeOverlay.MaterialComponents.Toolbar.Surface" />
+            app:popupTheme="@style/ThemeOverlay.MaterialComponents.Toolbar.Surface">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvToolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Товары"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                tools:ignore="SpUsage" />
+        </com.google.android.material.appbar.MaterialToolbar>
+
 
     </com.google.android.material.appbar.AppBarLayout>
 

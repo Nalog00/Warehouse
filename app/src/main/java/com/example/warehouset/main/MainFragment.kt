@@ -32,14 +32,11 @@ class MainFragment: Fragment(R.layout.fragment_main) {
         super.onViewCreated(view, savedInstanceState)
         binding= FragmentMainBinding.bind(view)
         navController = requireActivity().findNavController(R.id.main_nav_graph)
-        appBarConfiguration = AppBarConfiguration(
-            setOf(
-                R.id.homeFragment, R.id.historyTransaction, R.id.nav_info
-            ), binding.drawerLayout
-        )
+        appBarConfiguration = AppBarConfiguration(setOf(R.id.homeFragment, R.id.historyTransaction, R.id.nav_exit), binding.drawerLayout)
         binding.navView.setupWithNavController(navController)
         binding.appBarMain.toolbar.setNavigationOnClickListener {
             navController.navigateUp(appBarConfiguration)
         }
+
     }
 }
